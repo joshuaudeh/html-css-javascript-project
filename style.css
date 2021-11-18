@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 15px;
+    margin-bottom: 1rem;
+}
+.nav ul {
+    display: flex;
+    font-size: larger;
+    font-weight: bold;
+}
+.nav ul li {
+    list-style: none;
+    padding: 10px;
+}
+.nav ul li a {
+    text-decoration: none;
+    color: black
+}
+
+.about {
+    /* background-color: blueviolet; */
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.intro {
+    font-size: larger;
+}
+
+img {
+    border-radius: 50%;
+    float: right;
+    height: 250px;
+    margin-right: 10px;
+    transition: transform 3s;
+}
+
+img:hover {
+    transform: rotate(-45deg)
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.projects {
+    /* background-color: red; */
+    width: 67%;
+    margin: 0 auto 2rem;
+    font-size: large;
+}
+.skills {
+
+    width: 68%;
+    margin: 0px auto 2rem;
+    padding: 8px;
+}
+
+.fonts {
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: end;
+}
+
+.fab {
+    margin: 10px;
+}
+
+
+
+
+
