@@ -1,3 +1,4 @@
+/* Universal */
 * {
     margin: 0px;
     padding: 0px;
@@ -8,15 +9,28 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-h1 {
+
+/* Headings */
+
+.h1 {
     font-size: 2rem;
     font-weight: bolder;
 }
 
+h2 {
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+ /* styled components */
 .nav {
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
     padding: 15px;
     margin-bottom: 1rem;
 }
@@ -34,8 +48,14 @@ h1 {
     color: black
 }
 
-.about {
-    /* background-color: blueviolet; */
+.first {
+    cursor: pointer;
+}
+
+
+/* containers */
+
+.about-me {
     width: 70%;
     height: auto;
     margin: 0 auto;
@@ -44,70 +64,127 @@ h1 {
     flex-direction: column;
 }
 
-h2 {
-    margin-bottom: 1rem;
-}
-
-.intro {
+.intro-container {
     font-size: larger;
 }
 
-img {
-    border-radius: 50%;
-    float: right;
-    height: 250px;
-    margin-right: 10px;
-    transition: transform 3s;
-}
-
-img:hover {
-    transform: rotate(-45deg)
-}
-
-h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.projects {
-    /* background-color: red; */
+.projects-container {
     width: 67%;
     margin: 0 auto 2rem;
     font-size: large;
 }
-.skills {
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills {
     width: 68%;
     margin: 0px auto 2rem;
     padding: 8px;
+}
+
+/* images and fonts */
+
+.intro-container img {
+    border-radius: 50%;
+    float: right;
+    height: 250px;
+    margin: 1rem;
+    transition: transform 3s;
+}
+
+.intro-container img:hover {
+    transform: rotate(-45deg)
+}
+
+.first-program {
+    display: none;
+}
+
+.toggle {
+    height: 250px;
+    border-radius: 5px;
 }
 
 .fonts {
     font-size: 3rem;
     display: flex;
     justify-content: space-between;
+    margin: 8px;
 }
 
-.footer {
+.heart {
+    color: red;
+}
 
+
+.footer {
     width: 70%;
     margin: 0 auto;
     text-align: center;
 }
 
 
-.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: end;
-}
 
-.fab {
-    margin: 10px;
-}
+@media (max-width: 620px) {
+    .h1 {
+        display: none;
+    }
+    
+    .nav {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+    }
+    
+    .about-me {
+        /* background-color: blueviolet; */
+        width: 100%;
+        height: auto;
+    }
 
+    h2 {
+        text-align: center;
+    }
+    
+    .intro-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro-container img {
+        transition: transform 3s;
+    }
+
+    .intro-container img:hover {
+        transform: rotate(-45deg);
+    }
+
+    .projects-container {
+        width: 100%;
+        margin: 1.5rem;
+        font-size: large;
+    }
+
+    /* .skills {
+        width: 100%;
+        margin: 2rem;
+        padding: 8px;
+    } */
+
+    /* .fonts {
+        font-size: 3rem;
+        display: flex;
+        width: 100%;
+    } */
+
+
+}
 
 
 
