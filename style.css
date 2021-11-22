@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: lightgrey;
 }
 
 
@@ -92,6 +93,7 @@ h3 {
     border-radius: 50%;
     float: right;
     height: 250px;
+    max-width: 100%;
     margin: 1rem;
     transition: transform 3s;
 }
@@ -101,6 +103,9 @@ h3 {
 }
 
 .first-program {
+    display: none;
+}
+.second-img{
     display: none;
 }
 
@@ -135,13 +140,12 @@ h3 {
     }
     
     .nav {
-        flex-wrap: wrap;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
     }
     
     .about-me {
-        /* background-color: blueviolet; */
         width: 100%;
         height: auto;
     }
@@ -170,19 +174,6 @@ h3 {
         margin: 1.5rem;
         font-size: large;
     }
-
-    /* .skills {
-        width: 100%;
-        margin: 2rem;
-        padding: 8px;
-    } */
-
-    /* .fonts {
-        font-size: 3rem;
-        display: flex;
-        width: 100%;
-    } */
-
 
 }
 

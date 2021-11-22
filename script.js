@@ -1,13 +1,26 @@
-let paragraphs = Array.from(document.querySelectorAll('.first'));
-console.log(paragraphs);
+let paragraph = document.querySelector('.first');
+console.log(paragraph);
 
-let projects = Array.from(document.querySelectorAll(".first-program")) ;
-console.log(projects);
+let para = document.querySelector('.second');
+console.log(paragraph);
+
+let project = document.querySelector(".first-program") ;
+console.log(project);
+
+let secondImg = document.querySelector('.second-img');
+console.log(secondImg)
 
 
 
 
+paragraph.addEventListener('click', () => {
+    project.classList.toggle('first-program');
+})
 
+
+para.addEventListener('click', () => {
+    secondImg.classList.toggle('second-img');
+})
 
 
 // function showInfo() {
